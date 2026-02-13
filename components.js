@@ -108,7 +108,73 @@ function professionalExperienceComponent() {
     professionalExperienceEntriesDiv.innerHTML = entriesMarkup;
 }
 
+function projectsComponent() {
+    const projectsDiv = document.getElementById('projectsDiv');
+
+    const projects = [
+        {
+            title: 'Baiao Tech Community',
+            description: 'Um site para ajudar uma comunidade dev a achar eventos de tecnologia.',
+            technologies: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
+            link: 'https://baiaotech.org/',
+            image: '/assets/baiaotech.png'
+        }
+    ];
+
+    projects.forEach(project => {
+        const projectCard = document.createElement('div');
+        projectCard.className = 'group relative flex flex-col bg-white dark:bg-[#15182a] border border-gray-100 dark:border-gray-800 rounded-xl overflow-hidden hover:shadow-xl hover:shadow-primary/5 transition-all duration-300';
+        projectCard.innerHTML = `
+            <div
+            class="h-48 w-full bg-gray-50 dark:bg-gray-900 flex items-center justify-center overflow-hidden"
+            >
+                <img
+                  class="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-500 opacity-80 group-hover:opacity-100"
+                  data-alt="${project.title}"
+                  src="${project.image}"
+                />
+              </div>
+              <div class="p-6 flex flex-col flex-1">
+                <h3
+                  class="text-xl font-bold text-[#111218] dark:text-white mb-2"
+                >
+                  ${project.title}
+                </h3>
+                <p
+                  class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-6"
+                >
+                  ${project.description}
+                </p>
+                <div class="mt-auto flex items-center justify-between">
+                  <div class="flex gap-2">
+                    ${project.technologies.map(tech => `
+                      <span
+                        class="text-[10px] font-bold uppercase tracking-wider text-primary"
+                      >
+                        ${tech}
+                      </span>
+                    `).join('')}
+                  </div>
+                  <a
+                    class="text-sm font-bold text-primary flex items-center gap-1 group/link"
+                    href="${project.link}"
+                    target="_blank"
+                  >
+                    Ver Projeto
+                    <span
+                      class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+              </div>
+        `;
+        projectsDiv.appendChild(projectCard);
+    });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     expertiseComponent();
     professionalExperienceComponent();
+    projectsComponent();
 });

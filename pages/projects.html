@@ -1,0 +1,448 @@
+<!doctype html>
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>All Projects | Alex Rivera</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1337ec",
+              "background-light": "#f6f6f8",
+              "background-dark": "#101322",
+            },
+            fontFamily: {
+              display: ["Inter"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-white dark:bg-background-dark text-[#111218] dark:text-gray-100 antialiased transition-colors duration-300"
+  >
+    <div class="relative flex min-h-screen flex-col">
+      <header
+        class="sticky top-0 z-50 w-full border-b border-gray-100 bg-white/80 backdrop-blur-md dark:border-gray-800 dark:bg-background-dark/80 px-6 lg:px-40 py-4"
+      >
+        <div class="mx-auto flex max-w-[960px] items-center justify-between">
+          <div class="flex items-center gap-2 group cursor-pointer">
+            <div
+              class="size-6 bg-primary rounded flex items-center justify-center text-white"
+            >
+              <span class="material-symbols-outlined text-sm">code</span>
+            </div>
+            <span
+              class="text-lg font-bold tracking-tight text-[#111218] dark:text-white"
+              >Mario Marques</span
+            >
+          </div>
+          <nav class="hidden md:flex items-center gap-8">
+            <a
+              class="text-sm font-medium text-gray-600 hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors"
+              href="/index.html#about"
+              >Sobre</a
+            >
+            <a
+              class="text-sm font-medium text-gray-600 hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors"
+              href="/index.html#skills"
+              >Habilidades</a
+            >
+            <a
+              class="text-sm font-medium text-gray-600 hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors"
+              href="/index.html#projects"
+              >Projetos</a
+            >
+            <a
+              class="text-sm font-medium text-gray-600 hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors"
+              href="/index.html#contact"
+              >Contato</a
+            >
+          </nav>
+          <button
+            class="bg-primary hover:bg-blue-700 text-white px-5 py-2 rounded-lg text-sm font-bold transition-all shadow-sm"
+          >
+            Resume
+          </button>
+        </div>
+      </header>
+      <main
+        class="flex-1 mx-auto max-w-[1200px] w-full px-6 lg:px-10 py-16 md:py-24"
+      >
+        <div class="mb-16">
+          <h1
+            class="text-5xl md:text-6xl font-black tracking-tight text-[#111218] dark:text-white mb-4"
+          >
+            Projects
+          </h1>
+          <p
+            class="text-lg text-gray-500 dark:text-gray-400 max-w-2xl leading-relaxed"
+          >
+            Uma coleção abrangente do meu trabalho profissional, contribuições
+            de código aberto e projetos paralelos experimentais.
+          </p>
+        </div>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12"
+        >
+          <div
+            class="group flex flex-col bg-white dark:bg-[#15182a] border border-gray-100 dark:border-gray-800 rounded-xl overflow-hidden hover:shadow-xl hover:shadow-primary/5 transition-all duration-300"
+          >
+            <div
+              class="h-48 w-full bg-gray-50 dark:bg-gray-900 overflow-hidden"
+            >
+              <img
+                alt="Project 1"
+                class="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-500 opacity-80 group-hover:opacity-100"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKosEIrXwgAK2YvxzsYLJqQS-nlL6Fh2jLDyQG9a0Nv5Y2pmXQrqnkVqyTZN_bnW_VY3Gjs5Jp85elrFYMkqmIDnM_mlMu_r4rn6fXNrLuIoUXiSFgofkpXSqkcnecpnzE8ZKBTgPAzjhnFmXliGgAK7GRjxG_vV7xlroHn-aw2Gk4_TnzKsZ12y-Q6W6StOHftNQa-UVz1MlH5nuUC-OloPclGRfdlm2fmv-YNSk6VR5FR3vzsM7_XrAdUE35T6svMChKns-ab_5h"
+              />
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <div class="flex gap-2 mb-3">
+                <span
+                  class="text-[10px] font-bold uppercase tracking-wider text-primary"
+                  >Node.js</span
+                >
+                <span
+                  class="text-[10px] font-bold uppercase tracking-wider text-primary"
+                  >GraphQL</span
+                >
+              </div>
+              <h3 class="text-xl font-bold text-[#111218] dark:text-white mb-2">
+                E-commerce API Engine
+              </h3>
+              <p
+                class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-6"
+              >
+                A high-performance headless commerce API built with Node.js and
+                GraphQL for extreme scalability.
+              </p>
+              <div class="mt-auto flex items-center gap-4">
+                <a
+                  class="text-xs font-bold text-[#111218] dark:text-white flex items-center gap-1 hover:text-primary transition-colors"
+                  href="#"
+                >
+                  <span class="material-symbols-outlined text-base">link</span>
+                  Live Demo
+                </a>
+                <a
+                  class="text-xs font-bold text-gray-400 flex items-center gap-1 hover:text-primary transition-colors"
+                  href="#"
+                >
+                  <span class="material-symbols-outlined text-base">code</span>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="group flex flex-col bg-white dark:bg-[#15182a] border border-gray-100 dark:border-gray-800 rounded-xl overflow-hidden hover:shadow-xl hover:shadow-primary/5 transition-all duration-300"
+          >
+            <div
+              class="h-48 w-full bg-gray-50 dark:bg-gray-900 overflow-hidden"
+            >
+              <img
+                alt="Project 2"
+                class="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-500 opacity-80 group-hover:opacity-100"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6EOIWL2aVBrVEvg2RZ1DksQ21_BYGkG8ko7bWBadzqmLVcIXRbXWzuwQ0Hz0tp6DFOU5te3zRFG9sRuhE8BKnpyHUFmOmQc3dATMrOk6cxa-PvQkh3u8a2Lls0E0WsHoTLOr7HGhroT2HC0lC96YdqpTTJ6zvrP8sXz4c3GSDmjY1M0zoxMwTvP7HDlJ2iYDPBaBbevsqNRZypsZozUKAbJ-rAT3va7AY1MBlxvhbHJ68F15s8etS216xi8dvSZT4LUHnusec4xkD"
+              />
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <div class="flex gap-2 mb-3">
+                <span
+                  class="text-[10px] font-bold uppercase tracking-wider text-primary"
+                  >React</span
+                >
+                <span
+                  class="text-[10px] font-bold uppercase tracking-wider text-primary"
+                  >Framer</span
+                >
+              </div>
+              <h3 class="text-xl font-bold text-[#111218] dark:text-white mb-2">
+                Neural Task Manager
+              </h3>
+              <p
+                class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-6"
+              >
+                Minimalist task manager using React with seamless drag-and-drop
+                interactions.
+              </p>
+              <div class="mt-auto flex items-center gap-4">
+                <a
+                  class="text-xs font-bold text-[#111218] dark:text-white flex items-center gap-1 hover:text-primary transition-colors"
+                  href="#"
+                >
+                  <span class="material-symbols-outlined text-base">link</span>
+                  Live Demo
+                </a>
+                <a
+                  class="text-xs font-bold text-gray-400 flex items-center gap-1 hover:text-primary transition-colors"
+                  href="#"
+                >
+                  <span class="material-symbols-outlined text-base">code</span>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="group flex flex-col bg-white dark:bg-[#15182a] border border-gray-100 dark:border-gray-800 rounded-xl overflow-hidden hover:shadow-xl hover:shadow-primary/5 transition-all duration-300"
+          >
+            <div
+              class="h-48 w-full bg-gray-50 dark:bg-gray-900 overflow-hidden"
+            >
+              <img
+                alt="Project 3"
+                class="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-500 opacity-80 group-hover:opacity-100"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKosEIrXwgAK2YvxzsYLJqQS-nlL6Fh2jLDyQG9a0Nv5Y2pmXQrqnkVqyTZN_bnW_VY3Gjs5Jp85elrFYMkqmIDnM_mlMu_r4rn6fXNrLuIoUXiSFgofkpXSqkcnecpnzE8ZKBTgPAzjhnFmXliGgAK7GRjxG_vV7xlroHn-aw2Gk4_TnzKsZ12y-Q6W6StOHftNQa-UVz1MlH5nuUC-OloPclGRfdlm2fmv-YNSk6VR5FR3vzsM7_XrAdUE35T6svMChKns-ab_5h"
+              />
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <div class="flex gap-2 mb-3">
+                <span
+                  class="text-[10px] font-bold uppercase tracking-wider text-primary"
+                  >Next.js</span
+                >
+                <span
+                  class="text-[10px] font-bold uppercase tracking-wider text-primary"
+                  >Tailwind</span
+                >
+              </div>
+              <h3 class="text-xl font-bold text-[#111218] dark:text-white mb-2">
+                Analytics Dashboard
+              </h3>
+              <p
+                class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-6"
+              >
+                Real-time data visualization platform for monitoring server
+                performance and traffic.
+              </p>
+              <div class="mt-auto flex items-center gap-4">
+                <a
+                  class="text-xs font-bold text-[#111218] dark:text-white flex items-center gap-1 hover:text-primary transition-colors"
+                  href="#"
+                >
+                  <span class="material-symbols-outlined text-base">link</span>
+                  Live Demo
+                </a>
+                <a
+                  class="text-xs font-bold text-gray-400 flex items-center gap-1 hover:text-primary transition-colors"
+                  href="#"
+                >
+                  <span class="material-symbols-outlined text-base">code</span>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="group flex flex-col bg-white dark:bg-[#15182a] border border-gray-100 dark:border-gray-800 rounded-xl overflow-hidden hover:shadow-xl hover:shadow-primary/5 transition-all duration-300"
+          >
+            <div
+              class="h-48 w-full bg-gray-50 dark:bg-gray-900 overflow-hidden"
+            >
+              <img
+                alt="Project 4"
+                class="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-500 opacity-80 group-hover:opacity-100"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6EOIWL2aVBrVEvg2RZ1DksQ21_BYGkG8ko7bWBadzqmLVcIXRbXWzuwQ0Hz0tp6DFOU5te3zRFG9sRuhE8BKnpyHUFmOmQc3dATMrOk6cxa-PvQkh3u8a2Lls0E0WsHoTLOr7HGhroT2HC0lC96YdqpTTJ6zvrP8sXz4c3GSDmjY1M0zoxMwTvP7HDlJ2iYDPBaBbevsqNRZypsZozUKAbJ-rAT3va7AY1MBlxvhbHJ68F15s8etS216xi8dvSZT4LUHnusec4xkD"
+              />
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <div class="flex gap-2 mb-3">
+                <span
+                  class="text-[10px] font-bold uppercase tracking-wider text-primary"
+                  >Python</span
+                >
+                <span
+                  class="text-[10px] font-bold uppercase tracking-wider text-primary"
+                  >OpenCV</span
+                >
+              </div>
+              <h3 class="text-xl font-bold text-[#111218] dark:text-white mb-2">
+                Object Detection Tool
+              </h3>
+              <p
+                class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-6"
+              >
+                Advanced computer vision tool for identifying and tracking
+                objects in security footage.
+              </p>
+              <div class="mt-auto flex items-center gap-4">
+                <a
+                  class="text-xs font-bold text-[#111218] dark:text-white flex items-center gap-1 hover:text-primary transition-colors"
+                  href="#"
+                >
+                  <span class="material-symbols-outlined text-base">link</span>
+                  Live Demo
+                </a>
+                <a
+                  class="text-xs font-bold text-gray-400 flex items-center gap-1 hover:text-primary transition-colors"
+                  href="#"
+                >
+                  <span class="material-symbols-outlined text-base">code</span>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="group flex flex-col bg-white dark:bg-[#15182a] border border-gray-100 dark:border-gray-800 rounded-xl overflow-hidden hover:shadow-xl hover:shadow-primary/5 transition-all duration-300"
+          >
+            <div
+              class="h-48 w-full bg-gray-50 dark:bg-gray-900 overflow-hidden"
+            >
+              <img
+                alt="Project 5"
+                class="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-500 opacity-80 group-hover:opacity-100"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKosEIrXwgAK2YvxzsYLJqQS-nlL6Fh2jLDyQG9a0Nv5Y2pmXQrqnkVqyTZN_bnW_VY3Gjs5Jp85elrFYMkqmIDnM_mlMu_r4rn6fXNrLuIoUXiSFgofkpXSqkcnecpnzE8ZKBTgPAzjhnFmXliGgAK7GRjxG_vV7xlroHn-aw2Gk4_TnzKsZ12y-Q6W6StOHftNQa-UVz1MlH5nuUC-OloPclGRfdlm2fmv-YNSk6VR5FR3vzsM7_XrAdUE35T6svMChKns-ab_5h"
+              />
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <div class="flex gap-2 mb-3">
+                <span
+                  class="text-[10px] font-bold uppercase tracking-wider text-primary"
+                  >Solidity</span
+                >
+                <span
+                  class="text-[10px] font-bold uppercase tracking-wider text-primary"
+                  >Ether.js</span
+                >
+              </div>
+              <h3 class="text-xl font-bold text-[#111218] dark:text-white mb-2">
+                Web3 Wallet Connect
+              </h3>
+              <p
+                class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-6"
+              >
+                A secure library for connecting decentralized applications to
+                multiple crypto wallet providers.
+              </p>
+              <div class="mt-auto flex items-center gap-4">
+                <a
+                  class="text-xs font-bold text-[#111218] dark:text-white flex items-center gap-1 hover:text-primary transition-colors"
+                  href="#"
+                >
+                  <span class="material-symbols-outlined text-base">link</span>
+                  Live Demo
+                </a>
+                <a
+                  class="text-xs font-bold text-gray-400 flex items-center gap-1 hover:text-primary transition-colors"
+                  href="#"
+                >
+                  <span class="material-symbols-outlined text-base">code</span>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="group flex flex-col bg-white dark:bg-[#15182a] border border-gray-100 dark:border-gray-800 rounded-xl overflow-hidden hover:shadow-xl hover:shadow-primary/5 transition-all duration-300"
+          >
+            <div
+              class="h-48 w-full bg-gray-50 dark:bg-gray-900 overflow-hidden"
+            >
+              <img
+                alt="Project 6"
+                class="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-500 opacity-80 group-hover:opacity-100"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6EOIWL2aVBrVEvg2RZ1DksQ21_BYGkG8ko7bWBadzqmLVcIXRbXWzuwQ0Hz0tp6DFOU5te3zRFG9sRuhE8BKnpyHUFmOmQc3dATMrOk6cxa-PvQkh3u8a2Lls0E0WsHoTLOr7HGhroT2HC0lC96YdqpTTJ6zvrP8sXz4c3GSDmjY1M0zoxMwTvP7HDlJ2iYDPBaBbevsqNRZypsZozUKAbJ-rAT3va7AY1MBlxvhbHJ68F15s8etS216xi8dvSZT4LUHnusec4xkD"
+              />
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <div class="flex gap-2 mb-3">
+                <span
+                  class="text-[10px] font-bold uppercase tracking-wider text-primary"
+                  >Three.js</span
+                >
+                <span
+                  class="text-[10px] font-bold uppercase tracking-wider text-primary"
+                  >GLSL</span
+                >
+              </div>
+              <h3 class="text-xl font-bold text-[#111218] dark:text-white mb-2">
+                3D Portfolio Scene
+              </h3>
+              <p
+                class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-6"
+              >
+                Experimental interactive 3D landing page using custom shaders
+                and WebGL.
+              </p>
+              <div class="mt-auto flex items-center gap-4">
+                <a
+                  class="text-xs font-bold text-[#111218] dark:text-white flex items-center gap-1 hover:text-primary transition-colors"
+                  href="#"
+                >
+                  <span class="material-symbols-outlined text-base">link</span>
+                  Live Demo
+                </a>
+                <a
+                  class="text-xs font-bold text-gray-400 flex items-center gap-1 hover:text-primary transition-colors"
+                  href="#"
+                >
+                  <span class="material-symbols-outlined text-base">code</span>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer
+        class="border-t border-gray-100 dark:border-gray-800 px-6 lg:px-40 py-12 bg-white dark:bg-background-dark"
+      >
+        <div
+          class="mx-auto max-w-[960px] flex flex-col md:flex-row justify-between items-center gap-6"
+        >
+          <div class="flex flex-col items-center md:items-start gap-1">
+            <p class="text-sm font-medium text-[#111218] dark:text-white">
+              © 2026 Mario Marques
+            </p>
+            <p class="text-xs text-gray-400">
+              Construído com precisão e código mínimo.
+            </p>
+          </div>
+          <div
+            class="flex items-center gap-6 text-sm font-medium text-gray-500 dark:text-gray-400"
+          >
+            <a
+              class="hover:text-primary transition-colors"
+              href="https://github.com/mario-leandro"
+              target="_blank"
+              >GitHub</a
+            >
+            <a
+              class="hover:text-primary transition-colors"
+              href="https://www.linkedin.com/in/dev-marioleandro/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
