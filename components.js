@@ -118,7 +118,14 @@ function projectsComponent() {
       description: 'Um site para ajudar uma comunidade dev a achar eventos de tecnologia.',
       technologies: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
       link: 'https://baiaotech.org/',
-      image: '/assets/baiaotech.png'
+      image: '/assets/baiao_tech/baiaotech.png'
+    },
+    {
+      title: 'Controle Financeiro',
+      description: 'Projeto de controle financeiro pessoal, onde o usuário pode cadastrar suas receitas e despesas, e visualizar gráficos de seus gastos.',
+      technologies: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'PHP', 'MySQL'],
+      link: 'https://walletmotion.vercel.app/',
+      image: '/assets/controle_financeiro/dashboard.png'
     }
   ];
 
@@ -130,7 +137,7 @@ function projectsComponent() {
             class="h-48 w-full bg-gray-50 dark:bg-gray-900 flex items-center justify-center overflow-hidden"
             >
                 <img
-                  class="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-500 opacity-80 group-hover:opacity-100"
+                  class="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-500 object-contain opacity-80 group-hover:opacity-100"
                   data-alt="${project.title}"
                   src="${project.image}"
                 />
@@ -146,8 +153,8 @@ function projectsComponent() {
                 >
                   ${project.description}
                 </p>
-                <div class="mt-auto flex items-center justify-between">
-                  <div class="flex gap-2">
+                <div class="mt-auto flex flex-row flex-wrap items-center justify-between gap-3">
+                  <div class="flex flex-row flex-wrap gap-2">
                     ${project.technologies.map(tech => `
                       <span
                         class="text-[10px] font-bold uppercase tracking-wider text-primary"
@@ -157,7 +164,7 @@ function projectsComponent() {
                     `).join('')}
                   </div>
                   <a
-                    class="text-sm font-bold text-primary flex items-center gap-1 group/link"
+                    class="w-30 text-sm font-bold text-primary flex items-center gap-1 group/link"
                     href="${project.link}"
                     target="_blank"
                   >
