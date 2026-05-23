@@ -153,8 +153,8 @@ function projectsComponent() {
                 >
                   ${project.description}
                 </p>
-                <div class="mt-auto flex flex-row flex-wrap items-center justify-between gap-3">
-                  <div class="flex flex-row flex-wrap gap-2">
+                <div class="mt-auto flex flex-col items-center justify-between gap-5">
+                  <div class="w-full flex flex-row flex-wrap gap-2">
                     ${project.technologies.map(tech => `
                       <span
                         class="text-[10px] font-bold uppercase tracking-wider text-primary"
@@ -163,17 +163,30 @@ function projectsComponent() {
                       </span>
                     `).join('')}
                   </div>
-                  <a
-                    class="w-30 text-sm font-bold text-primary flex items-center gap-1 group/link"
-                    href="${project.link}"
-                    target="_blank"
-                  >
-                    Ver Projeto
-                    <span
-                      class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform"
-                      >arrow_forward</span
+                  
+                  <div class="w-full flex items-center justify-between gap-2">
+                    <a
+                      class="w-30 text-sm font-bold text-primary flex items-center gap-1 group/link"
+                      href="${project.link}"
+                      target="_blank"
                     >
-                  </a>
+                      Ver Projeto
+                      <span
+                        class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform"
+                        >arrow_forward</span
+                      >
+                    </a>
+
+                    <a
+                      class="w-30 text-sm font-bold text-primary flex items-center gap-1 group/link"
+                      href="/pages/detalhes-projeto.html"
+                    >
+                      Mais Detalhes
+                      <span
+                        class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform"
+                        >arrow_forward</span>
+                    </a>
+                  </div>
                 </div>
               </div>
         `;
